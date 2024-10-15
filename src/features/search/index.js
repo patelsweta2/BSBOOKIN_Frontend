@@ -1,8 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
-import SearchBar from "./SearchBar";
+import SearchBar from "./SearchBars";
 import SearchBarMobile from "./SearchBarMobile";
 
 const CitySearch = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (navigationInfo) => {
+    // converting selected date into epoch in seconds
+    navigationInfo.selectedDate = parseInt(navigationInfo.selectedDate / 1000);
+    navigate(
+      `/trips/search/${navigationInfo.source}/${navigationInfo.sourceId}/${navigationInfo.destination}/${navigationInfo.destinationId}/${navigationInfo.selectedDate}`
+    );
+  };
+
   return (
     <div className="search-page">
       <Navbar />
@@ -11,13 +22,13 @@ const CitySearch = () => {
           <div className="search-form-container">
             <h1>Book Bus Tickets</h1>
             <div className="bg-white">
-              <SearchBar />
+              <SearchBar handleNavigate={handleNavigate} />
             </div>
           </div>
         </div>
       </div>
       <div className="mobile-search-component">
-        <SearchBarMobile />
+        <SearchBarMobile handleNavigate={handleNavigate} />
       </div>
     </div>
   );
