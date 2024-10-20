@@ -2,7 +2,7 @@ import { useState } from "react";
 import SeatPrices from "./SeatPrices";
 import Seats from "./Seats";
 import styles from "../styles/seat-content-styles.module.scss";
-import BoardingDroppingPoints from "./BoardingDroppingPoints";
+import BoardingDroppingPoints from "./BoardingDroppingPoint";
 
 const SeatContent = ({ seatData }) => {
   const [selectedPrice, setSelectedPrice] = useState("all");

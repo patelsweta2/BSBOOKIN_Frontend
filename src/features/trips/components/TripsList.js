@@ -1,7 +1,7 @@
-import "../styles/TripList.scss";
+import "../styles/TripsList.scss";
 import tagImg from "../assets/tagImg.jpg";
 
-import { formatDate, formatTime } from "./formatDatetime";
+import { formatDate, formatTime } from "./FormateDateTime.js";
 import { TripDetails } from "./TripsDetails";
 import { useSelector } from "react-redux";
 import { tripsSelector } from "../redux/selectors";

@@ -4,11 +4,11 @@ import SearchItems from "./Component/SearchItem";
 import BusTypes from "./Component/BusTypes";
 import PriceRange from "./Component/PriceRange";
 import DepartureTime from "./Component/DepartureTime";
-import { clearAllFilters, filterType } from "./slice";
+import { clearAllFilters, filterType } from "./redux/slice";
 import {
   boardingDroppingPointsSelector,
   busPartnerSelector,
-} from "./selectors";
+} from "./redux/selectors.js";
 import "./style/filter.scss";
 import { Divider } from "antd";
 

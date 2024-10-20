@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { filterType, toggleStop } from "../slice";
+import { filterType, toggleStop } from "../redux/slice";
 import { busTypes } from "../enum";
 import "../style/BusTypes.scss";
 

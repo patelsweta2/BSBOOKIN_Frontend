@@ -1,4 +1,4 @@
-import { filterType, departureTime } from "../../filters/slice";
+import { filterType, departureTime } from "../../filters/redux/slice";
 import { createSelector } from "reselect";
 
 export const tripsStatusSelector = (state) => state.trips.apiStatus;

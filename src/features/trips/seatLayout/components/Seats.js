@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import styles from "../styles/seats-styles.module.scss";
+import styles from "../styles/seat-styles.module.scss";
 import { Tooltip } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { setAllTripsSelectedSeatData } from "../../redux/slice";

@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import searchSlice from "../feature/search/slice";
-import filtersSlice from "../feature/filters/slice";
-import bookingSlice from "../feature/booking/slice";
-import tripsSlice from "../feature/trips/redux/slice";
+import searchSlice from "../features/search/slice";
+import filtersSlice from "../features/filters/redux/slice";
+import bookingSlice from "../features/booking/slice";
+import tripsSlice from "../features/trips/redux/slice";
 
 const store = configureStore({
   reducer: {

@@ -2,7 +2,7 @@ import Endpoints from "../../../network/endPoints";
 import request from "../../../network/request";
 
 import { updateTripsStatus } from "../redux/slice";
-import { togglePriceRange } from "../../filters/slice";
+import { togglePriceRange } from "../../filters/redux/slice";
 export const fetchTripsList = (searchInfo) => {
   return async function (dispatch) {
     dispatch(updateTripsStatus({ status: "pending" }));

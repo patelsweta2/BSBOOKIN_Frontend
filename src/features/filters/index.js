@@ -5,7 +5,7 @@ import { Drawer } from "antd";
 import Brightness6Icon from "@mui/icons-material/Brightness6";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
 import FilterListIcon from "@mui/icons-material/FilterList";
-import { filterType, toggleStop, departureTime } from "./slice";
+import { filterType, toggleStop, departureTime } from "./redux/slice";
 import { busTypes } from "./enum";
 import "./style/Footer.scss";
 

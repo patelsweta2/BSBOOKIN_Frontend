@@ -5,7 +5,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import Spinner from "../../../utlis/Spiner";
+import Spinner from "../../../utils/Spinner";
 import SeatHeader from "./components/SeatHeader";
 import SeatContent from "./components/SeatContent";
 import { useDispatch } from "react-redux";

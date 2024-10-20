@@ -1,7 +1,7 @@
 import { Empty, Input } from "antd";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleStop } from "../slice";
+import { toggleStop } from "../redux/slice";
 import "../style/Search.scss";
 
 const SearchItems = ({ list, placeholder, identifier }) => {

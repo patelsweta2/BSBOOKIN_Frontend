@@ -1,5 +1,5 @@
 import React from "react";
-import { filterType, toggleStop } from "../slice";
+import { filterType, toggleStop } from "../redux/slice";
 import { useDispatch, useSelector } from "react-redux";
 import { departureTimes } from "../enum";
 

@@ -5,7 +5,7 @@ import EventSeatIcon from "@mui/icons-material/EventSeat";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import Brightness6Icon from "@mui/icons-material/Brightness6";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
-import { departureTime } from "./slice";
+import { departureTime } from "./redux/slice";
 
 export const busTypes = [
   {

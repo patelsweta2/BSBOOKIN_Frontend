@@ -6,7 +6,7 @@ import { allTripsSelector, tripsStatusSelector } from "./redux/selectors";
 import { useEffect } from "react";
 import { fetchTripsList } from "./redux/thunk";
 import { useParams } from "react-router-dom";
-import Spinner from "../../utlis/Spiner";
+import Spinner from "../../utils/Spinner";
 
 const TripsScreen = () => {
   const { sourceCityId, destinationCityId, travelDate } = useParams();

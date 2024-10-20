@@ -1,5 +1,5 @@
 import { Slider } from "antd";
-import { toggleUpdatedPriceRange } from "../slice";
+import { toggleUpdatedPriceRange } from "../redux/slice";
 import { useDispatch, useSelector } from "react-redux";
 import "../style/PriceRange.scss";
 
